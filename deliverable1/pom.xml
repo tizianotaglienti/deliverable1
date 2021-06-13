@@ -3,7 +3,11 @@
   <groupId>deliverable1</groupId>
   <artifactId>deliverable1</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  
+  <properties>
+  	<sonar.projectKey>tizianotaglienti_deliverable1</sonar.projectKey>
+  	<sonar.organization>tizianotaglienti</sonar.organization>
+  	<sonar.host.url>https://sonarcloud.io</sonar.host.url>
+  </properties>
   <dependencies>
 	<!-- https://mvnrepository.com/artifact/org.eclipse.jgit/org.eclipse.jgit -->
 	<dependency>
