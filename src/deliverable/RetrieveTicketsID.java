@@ -1,4 +1,4 @@
-package deliverable1;
+package deliverable;
 
 import java.io.BufferedReader;
 import java.io.FileWriter;
@@ -25,7 +25,7 @@ public class RetrieveTicketsID {
 	private RetrieveTicketsID() {}
 
 	private static String readAll(Reader rd) throws IOException {
-		StringBuilder sb = new StringBuilder();
+		var sb = new StringBuilder();
 		int cp;
 		while ((cp = rd.read()) != -1) {
 			sb.append((char) cp);
@@ -36,10 +36,9 @@ public class RetrieveTicketsID {
 	public static JSONArray readJsonArrayFromUrl(String url) throws IOException, JSONException {
 		InputStream is = new URL(url).openStream();
 		try {
-			BufferedReader rd = new BufferedReader(new InputStreamReader(is, StandardCharsets.UTF_8));
+			var rd = new BufferedReader(new InputStreamReader(is, StandardCharsets.UTF_8));
 			String jsonText = readAll(rd);
-			JSONArray json = new JSONArray(jsonText);
-			return json;
+			return new JSONArray(jsonText);
 		} finally {
 			is.close();
 		}
@@ -48,10 +47,9 @@ public class RetrieveTicketsID {
 	public static JSONObject readJsonFromUrl(String url) throws IOException, JSONException {
 		InputStream is = new URL(url).openStream();
 		try {
-			BufferedReader rd = new BufferedReader(new InputStreamReader(is, StandardCharsets.UTF_8));
+			var rd = new BufferedReader(new InputStreamReader(is, StandardCharsets.UTF_8));
 			String jsonText = readAll(rd);
-			JSONObject json = new JSONObject(jsonText);
-			return json;
+			return new JSONObject(jsonText);
 		} finally {
 			is.close();
 		}
@@ -70,7 +68,6 @@ public class RetrieveTicketsID {
 	    try {
 	    	fileWriter.append("Ticket; Date\n");
 	    	t = resolutions.size();
-    		System.out.print(resolutions.toString());
 
 	    	for (i = 0; i < t; i++) {
 	    		fileWriter.append(tickets.get(i));
@@ -117,7 +114,7 @@ public class RetrieveTicketsID {
 					+ projName + "%22AND%22issueType%22=%22new+feature%22AND%22resolution%22=%22fixed%22&fields=key,resolutiondate,versions,created&startAt="
 					+ i.toString() + "&maxResults=" + j.toString();
 			JSONObject json = readJsonFromUrl(url);
-			JSONArray issues = json.getJSONArray("issues");
+			var issues = json.getJSONArray("issues");
 			total = json.getInt("total");
 			
 			for (; i < total && i < j; i++) {

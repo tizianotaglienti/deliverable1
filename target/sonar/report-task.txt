@@ -1,0 +1,7 @@
+organization=tizianotaglienti
+projectKey=tizianotaglienti_deliverable1
+serverUrl=https://sonarcloud.io
+serverVersion=8.0.0.20946
+dashboardUrl=https://sonarcloud.io/dashboard?id=tizianotaglienti_deliverable1
+ceTaskId=AXoJkJ-GjC6UrYfm08oT
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AXoJkJ-GjC6UrYfm08oT

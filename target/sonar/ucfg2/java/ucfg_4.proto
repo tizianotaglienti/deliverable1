@@ -1,0 +1,88 @@
+
+]deliverable1.GitHandler#clone(Ljava/lang/String;Ljava/lang/String;)Lorg/eclipse/jgit/api/Git;[
+QC:/Users/Titti/Desktop/deliverable1/deliverable1/src/deliverable1/GitHandler.java ("11*ë
+2[
+QC:/Users/Titti/Desktop/deliverable1/deliverable1/src/deliverable1/GitHandler.java (q©
+¶
+[
+QC:/Users/Titti/Desktop/deliverable1/deliverable1/src/deliverable1/GitHandler.java (q
+gitorg.eclipse.jgit.api.Git"__id* 
+
+%6org.eclipse.jgit.api.Git*
+1*ﬂ
+6[
+QC:/Users/Titti/Desktop/deliverable1/deliverable1/src/deliverable1/GitHandler.java	 (q˜Ù
+[
+QC:/Users/Titti/Desktop/deliverable1/deliverable1/src/deliverable1/GitHandler.java	 (q
+%6org.eclipse.jgit.api.Git"Borg.eclipse.jgit.api.CloneCommand#call()Lorg/eclipse/jgit/api/Git;*)
+'
+%5!org.eclipse.jgit.api.CloneCommand2call()*
+2*≥
+7[
+QC:/Users/Titti/Desktop/deliverable1/deliverable1/src/deliverable1/GitHandler.java	 (jÀ»
+[
+QC:/Users/Titti/Desktop/deliverable1/deliverable1/src/deliverable1/GitHandler.java	 (j'
+%5!org.eclipse.jgit.api.CloneCommand"aorg.eclipse.jgit.api.CloneCommand#setDirectory(Ljava/io/File;)Lorg/eclipse/jgit/api/CloneCommand;*)
+'
+%2!org.eclipse.jgit.api.CloneCommand*
+
+%3java.io.File2setDirectory(Ljava/io/File;)*
+6*Æ
+8[
+QC:/Users/Titti/Desktop/deliverable1/deliverable1/src/deliverable1/GitHandler.javad (hÅ
+[
+QC:/Users/Titti/Desktop/deliverable1/deliverable1/src/deliverable1/GitHandler.java_ (c
+%3java.io.File"java.io.File¬
+ø
+[
+QC:/Users/Titti/Desktop/deliverable1/deliverable1/src/deliverable1/GitHandler.java[ (i
+%4"(java.io.File#<init>(Ljava/lang/String;)V*
+
+%3java.io.File*
+
+pathjava.lang.String*
+7*¯
+9[
+QC:/Users/Titti/Desktop/deliverable1/deliverable1/src/deliverable1/GitHandler.java& (B¬
+ø
+[
+QC:/Users/Titti/Desktop/deliverable1/deliverable1/src/deliverable1/GitHandler.java& (L
+%1java.lang.String"__concat*
+https://github.com/apache/*
+
+projNamejava.lang.StringÀ»
+[
+QC:/Users/Titti/Desktop/deliverable1/deliverable1/src/deliverable1/GitHandler.java	 (M'
+%2!org.eclipse.jgit.api.CloneCommand"_org.eclipse.jgit.api.CloneCommand#setURI(Ljava/lang/String;)Lorg/eclipse/jgit/api/CloneCommand;*)
+'
+%0!org.eclipse.jgit.api.CloneCommand*
+
+%1java.lang.String2setURI(Ljava/lang/String;)*
+8*ﬂ
+10[
+QC:/Users/Titti/Desktop/deliverable1/deliverable1/src/deliverable1/GitHandler.java	 (ˆ
+Û
+[
+QC:/Users/Titti/Desktop/deliverable1/deliverable1/src/deliverable1/GitHandler.java	 ('
+%0!org.eclipse.jgit.api.CloneCommand"Morg.eclipse.jgit.api.Git#cloneRepository()Lorg/eclipse/jgit/api/CloneCommand;*"
+org.eclipse.jgit.api.Git*
+9*˘
+11[
+QC:/Users/Titti/Desktop/deliverable1/deliverable1/src/deliverable1/GitHandler.java (
+è
+å
+[
+QC:/Users/Titti/Desktop/deliverable1/deliverable1/src/deliverable1/GitHandler.java (
+
+gitorg.eclipse.jgit.api.Git"__id*
+""*
+10*„
+1[
+QC:/Users/Titti/Desktop/deliverable1/deliverable1/src/deliverable1/GitHandler.java	 ("Ä
+[
+QC:/Users/Titti/Desktop/deliverable1/deliverable1/src/deliverable1/GitHandler.java (!
+
+gitorg.eclipse.jgit.api.Git:
+pathjava.lang.String:
+projNamejava.lang.StringB"
+deliverable1.GitHandler

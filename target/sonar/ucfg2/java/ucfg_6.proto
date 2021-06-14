@@ -1,0 +1,125 @@
+
+_deliverable1.GitHandler#getFixDate(Ljava/util/List;Ljava/lang/String;)Ljava/time/LocalDateTime;[
+QC:/Users/Titti/Desktop/deliverable1/deliverable1/src/deliverable1/GitHandler.java* *('"6*ï
+3[
+QC:/Users/Titti/Desktop/deliverable1/deliverable1/src/deliverable1/GitHandler.java3 3(áÞ
+[
+QC:/Users/Titti/Desktop/deliverable1/deliverable1/src/deliverable1/GitHandler.java3% 3(;	
+%5int"3org.eclipse.jgit.revwalk.RevCommit#getCommitTime()I*.
+,
+commit"org.eclipse.jgit.revwalk.RevCommit2getCommitTime()Ô
+Ñ
+[
+QC:/Users/Titti/Desktop/deliverable1/deliverable1/src/deliverable1/GitHandler.java3 3(<
+%6java.time.Instant"5java.time.Instant#ofEpochSecond(J)Ljava/time/Instant;*"
+java.time.Instant*
+	
+%5intÒ
+Ï
+[
+QC:/Users/Titti/Desktop/deliverable1/deliverable1/src/deliverable1/GitHandler.java3D 3(T
+%7java.time.ZoneId"9java.time.ZoneId#of(Ljava/lang/String;)Ljava/time/ZoneId;*"
+java.time.ZoneId*
+UTC—”
+[
+QC:/Users/Titti/Desktop/deliverable1/deliverable1/src/deliverable1/GitHandler.java3 3(U
+%8java.time.ZonedDateTime"Ejava.time.Instant#atZone(Ljava/time/ZoneId;)Ljava/time/ZonedDateTime;*
+
+%6java.time.Instant*
+
+%7java.time.ZoneId2atZone(Ljava/time/ZoneId;)÷ô
+[
+QC:/Users/Titti/Desktop/deliverable1/deliverable1/src/deliverable1/GitHandler.java3 3(g
+%9java.time.LocalDateTime"Bjava.time.ZonedDateTime#toLocalDateTime()Ljava/time/LocalDateTime;*
+
+%8java.time.ZonedDateTime2toLocalDateTime()¬
+©
+[
+QC:/Users/Titti/Desktop/deliverable1/deliverable1/src/deliverable1/GitHandler.java3 3(g#
+dateTimejava.time.LocalDateTime"__id*
+
+%9java.time.LocalDateTimeò
+ï
+[
+QC:/Users/Titti/Desktop/deliverable1/deliverable1/src/deliverable1/GitHandler.java4 4((!
+%10deliverable1.LogController"Mdeliverable1.LogController#getSingletonInstance()Ldeliverable1/LogController;*"
+deliverable1.LogController·
+´
+[
+QC:/Users/Titti/Desktop/deliverable1/deliverable1/src/deliverable1/GitHandler.java42 4(M
+%11java.lang.String"__concat*
+Commit for ticket: *
+
+keyjava.lang.String…‚
+[
+QC:/Users/Titti/Desktop/deliverable1/deliverable1/src/deliverable1/GitHandler.java4 4(N
+%12void"8deliverable1.LogController#saveMess(Ljava/lang/String;)V*#
+!
+%10deliverable1.LogController*
+
+%11java.lang.String2saveMess(Ljava/lang/String;)*
+5*î
+4[
+QC:/Users/Titti/Desktop/deliverable1/deliverable1/src/deliverable1/GitHandler.java0 0(»
+¸
+[
+QC:/Users/Titti/Desktop/deliverable1/deliverable1/src/deliverable1/GitHandler.java0 0($(
+%2"org.eclipse.jgit.revwalk.RevCommit"
+__arrayGet*
+
+commitsjava.util.List*
+""À
+½
+[
+QC:/Users/Titti/Desktop/deliverable1/deliverable1/src/deliverable1/GitHandler.java0 0(%,
+commit"org.eclipse.jgit.revwalk.RevCommit"__id**
+(
+%2"org.eclipse.jgit.revwalk.RevCommitþ
+[
+QC:/Users/Titti/Desktop/deliverable1/deliverable1/src/deliverable1/GitHandler.java2 2(
+%3java.lang.String"Eorg.eclipse.jgit.revwalk.RevCommit#getFullMessage()Ljava/lang/String;*.
+,
+commit"org.eclipse.jgit.revwalk.RevCommit2getFullMessage()þû
+[
+QC:/Users/Titti/Desktop/deliverable1/deliverable1/src/deliverable1/GitHandler.java2 2(+
+%4boolean"4java.lang.String#contains(Ljava/lang/CharSequence;)Z*
+
+%3java.lang.String*
+
+keyjava.lang.String2"contains(Ljava/lang/CharSequence;)*
+3
+5*“
+5[
+QC:/Users/Titti/Desktop/deliverable1/deliverable1/src/deliverable1/GitHandler.java/ /(¨¥
+[
+QC:/Users/Titti/Desktop/deliverable1/deliverable1/src/deliverable1/GitHandler.java/ /( 	
+%1int"java.util.List#size()I*
+
+commitsjava.util.List2size()*
+4
+1*Ô
+6[
+QC:/Users/Titti/Desktop/deliverable1/deliverable1/src/deliverable1/GitHandler.java+ +(Ö
+Ó
+[
+QC:/Users/Titti/Desktop/deliverable1/deliverable1/src/deliverable1/GitHandler.java, ,(
+
+%0void"0java.util.Collections#reverse(Ljava/util/List;)V*"
+java.util.Collections*
+
+commitsjava.util.List“
+
+[
+QC:/Users/Titti/Desktop/deliverable1/deliverable1/src/deliverable1/GitHandler.java- -( #
+dateTimejava.time.LocalDateTime"__id*
+""*
+5*ç
+1[
+QC:/Users/Titti/Desktop/deliverable1/deliverable1/src/deliverable1/GitHandler.java8	 8("„
+[
+QC:/Users/Titti/Desktop/deliverable1/deliverable1/src/deliverable1/GitHandler.java8 8(%
+#
+dateTimejava.time.LocalDateTime:
+commitsjava.util.List:
+keyjava.lang.StringB"
+deliverable1.GitHandler

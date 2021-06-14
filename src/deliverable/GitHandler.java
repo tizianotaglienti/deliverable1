@@ -1,4 +1,4 @@
-package deliverable1;
+package deliverable;
 
 import java.io.File;
 import java.io.IOException;
@@ -16,7 +16,8 @@ import org.eclipse.jgit.revwalk.RevCommit;
 
 public class GitHandler {
 	 
-	private GitHandler() {}
+	private GitHandler() {//costruttore
+		}
 	
 	public static Git clone(String path, String projName) throws GitAPIException, IOException{
 		Git git;
@@ -46,7 +47,7 @@ public class GitHandler {
 		
 		for (i = 0; i < commits.size(); i++) {
 			RevCommit commit = commits.get(i);
-			//LogController.getSingletonInstance().saveMess("messaggio: " + commit.getFullMessage()); 
+			
 			if(commit.getFullMessage().contains(key)) {
 				dateTime = Instant.ofEpochSecond(commit.getCommitTime()).atZone(ZoneId.of("UTC")).toLocalDateTime();
 				LogController.getSingletonInstance().saveMess("Commit for ticket: " + key);
