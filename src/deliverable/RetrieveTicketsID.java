@@ -35,8 +35,7 @@ public class RetrieveTicketsID {
 	
 	public static JSONArray readJsonArrayFromUrl(String url) throws IOException, JSONException {
 		InputStream is = new URL(url).openStream();
-		try {
-			var rd = new BufferedReader(new InputStreamReader(is, StandardCharsets.UTF_8));
+		try (var rd = new BufferedReader(new InputStreamReader(is, StandardCharsets.UTF_8))){
 			String jsonText = readAll(rd);
 			return new JSONArray(jsonText);
 		} finally {
@@ -46,8 +45,7 @@ public class RetrieveTicketsID {
 
 	public static JSONObject readJsonFromUrl(String url) throws IOException, JSONException {
 		InputStream is = new URL(url).openStream();
-		try {
-			var rd = new BufferedReader(new InputStreamReader(is, StandardCharsets.UTF_8));
+		try (var rd = new BufferedReader(new InputStreamReader(is, StandardCharsets.UTF_8))){
 			String jsonText = readAll(rd);
 			return new JSONObject(jsonText);
 		} finally {
@@ -92,7 +90,7 @@ public class RetrieveTicketsID {
 	public static void main(String[] args) throws IOException, JSONException, GitAPIException {
 		Map<String, LocalDateTime> resolutions = new HashMap<>();
 		List<String> tickets = new ArrayList<>();
-		List<RevCommit> commits = new ArrayList<>();
+		List<RevCommit> commits;
 		LogController log;
 		
 		var projName ="TAJO";
